@@ -9,7 +9,6 @@
     "test": "ng test",
     "server": "lib/index.js",
     "postinstall": "ng build --aot -prod",
-    "heroku-postbuild": "ng build"
   },
   "private": true,
   "dependencies": {
