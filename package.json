@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "lib/index.js"
+    "server": "lib/index.js",
+    "postinstall": "ng build --aot -prod",
+    "heroku-postbuild": "ng build"
   },
   "private": true,
   "dependencies": {
