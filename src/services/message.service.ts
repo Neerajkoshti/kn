@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-const API_URL = `https://kn-assignment.herokuapp.com/message`;
+const API_URL = `https://remarkable-chimera-58c3aa.netlify.app/message`;
 @Injectable()
 export class MessageService {
   constructor(private http: HttpClient) {}
@@ -17,7 +17,9 @@ export class MessageService {
   }
   public sendOtp(doc: {}) {
     return this.http
-      .post(`https://kn-assignment.herokuapp.com/send-otp`, { doc: doc })
+      .post(`https://remarkable-chimera-58c3aa.netlify.app/send-otp`, {
+        doc: doc,
+      })
       .pipe(map((response) => response));
   }
 }
