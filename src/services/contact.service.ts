@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-const API_URL = `https://kn-assignment.herokuapp.com/contact`;
+const API_URL = `http://localhost:8000/contact`;
 @Injectable()
 export class ContactService {
   constructor(private http: HttpClient) {}
