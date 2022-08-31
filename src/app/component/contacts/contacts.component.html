@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <div class="mt-3 mb-3">
+        <h3>Contacts</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4" *ngFor="let value of contacts">
+          <a routerLink="/contact/{{ value._id }}" class="link"
+            ><div class="card rounded">
+              <div class="card-body">
+                <p>First Name : {{ value.firstName }}</p>
+                <p>Last Name : {{ value.lastName }}</p>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
