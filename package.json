@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node lib/index.js",
+    "start": "ng serve --watch",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "lib/index.js"
+    "server": "node lib/index.js"
   },
   "private": true,
   "dependencies": {
