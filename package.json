@@ -7,8 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "server": "lib/index.js",
-    "postinstall": "ng build --aot -prod"
+    "server": "lib/index.js"
   },
   "private": true,
   "dependencies": {
