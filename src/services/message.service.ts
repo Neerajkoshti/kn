@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-const API_URL = `http://localhost:8000/message`;
+const API_URL = `https://kn-assignment.herokuapp.com/message`;
 @Injectable()
 export class MessageService {
   constructor(private http: HttpClient) {}
@@ -17,7 +17,7 @@ export class MessageService {
   }
   public sendOtp(doc: {}) {
     return this.http
-      .post(`http://localhost:8000/send-otp`, { doc: doc })
+      .post(`https://kn-assignment.herokuapp.com/send-otp`, { doc: doc })
       .pipe(map((response) => response));
   }
 }
