@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-const API_URL = `http://localhost:9000/contact`;
+const API_URL = `https://kn-three.vercel.app/contact`;
 @Injectable()
 export class ContactService {
   constructor(private http: HttpClient) {}
